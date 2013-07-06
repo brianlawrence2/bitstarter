@@ -5,8 +5,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   var index = fs.readFileSystem;
-  var buffer = new Buffer();
-  buffer.write(index);
+  var buffer = new Buffer(index);
   response.send(buffer.toString('utf-8'));
 });
 
